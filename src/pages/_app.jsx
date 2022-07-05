@@ -6,6 +6,8 @@ import Dom from '@/components/layout/dom'
 import '@/styles/index.css'
 import dynamic from 'next/dynamic'
 
+
+
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: false,
 })

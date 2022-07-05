@@ -7,6 +7,8 @@ const withOffline = require('next-offline')
 
 const nextConfig = {
   webpack(config, { isServer }) {
+    //config.resolve.fallback = { fs: false , module: false}
+    
     // audio support
     config.module.rules.push({
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
